@@ -18,57 +18,59 @@ body {
   line-height: 1.5em;
 }
 
-.container {
-  max-width: 440px;
-  margin: 50px auto;
-  background: #000;
-  padding: 20px;
-  border-radius: 10px;
+h1 {
+  text-align: center;
+  margin: 0 0 20px;
+  color: var(--primary-color);
 }
 
-form input, form label, form button {
+input {
   display: block;
   width: 100%;
+  padding: 10px;
   margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
-form input {
-  font-size: 24px;
-  height: 50px;
-  padding: 0 20px;
-}
-
-form input:focus {
-  outline: 1px solid var(--primary-color);
-}
-
-form button {
-  border: none;
+input[type="submit"] {
   background: var(--primary-color);
+  border: 0;
   color: #fff;
-  font-size: 18px;
-  font-weight: 700;
-  height: 50px;
   cursor: pointer;
-  margin-top: 30px;
 }
 
-form button:hover {
+input[type="submit"]:hover {
   background: var(--primary-color-darker);
 }
 
+.container {
+  max-width: 440px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
 .calc {
-  color: #fff;
+  color: var(--primary-color);
 }
 
 .calculadora {
   width: 400px;
+  height: 400px;
+  background: #fff;
+  border-radius: 50%;
+  width: 100%;
 }
 
 .display {
   font-size: 2em;
   width: 100%;
   text-align: right;
+  padding: 0 10px;
+  margin-bottom: 10px;
 }
 
 .btn {
@@ -79,6 +81,7 @@ form button:hover {
   background: #dfdfdf;
   cursor: pointer;
   border-radius: 3px;
+  margin-bottom: 10px;
 }
 
 .btn:hover {
@@ -91,10 +94,6 @@ form button:hover {
     margin: 0;
     border-radius: 3px;
     cursor: pointer;
-  }
-
-  .calculadora {
-    width: 100%;
   }
 
   .btn {

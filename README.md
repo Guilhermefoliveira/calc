@@ -5,7 +5,6 @@ Why use it? Its useful for simple calculations.
 Features: 
 Add, Multiply, Subtract and Divide 
 
-
 html 
 css 
 javascript 
